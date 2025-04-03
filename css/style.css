@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+.wraper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.img-wraper {padding: 2px 4px;}
+
+.img-wraper img {width: 100%;}
+
+@media (min-width: 1024px) {
+    .img-wraper {width: calc(100% / 6);}
+}
+
+@media (max-width: 1024px) {
+    .img-wraper {width: 33.3%;}
+}
+
+@media (max-width: 768px) {
+    .img-wraper {width: 50%;}
+}
+
+@media (max-width: 600px) {
+    .img-wraper {width: 100%;}
+}
